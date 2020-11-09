@@ -15,6 +15,10 @@ it("renders without crashing", () => {
   shallow(<App />);
 });
 
+it ('renders App heading', () => {
+  const title = (<h1>DevBobBobBob</h1>);
+  expect(wrapper.contains(title)).toEqual(true);
+});
 
 // it("renders same as snapshot", () => {
 //   const tree = shallow(<App />);

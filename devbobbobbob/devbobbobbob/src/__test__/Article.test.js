@@ -21,10 +21,25 @@ it ('renders Article title', () => {
 });
 
 
-it('render Article description', ()=> {
-    const description = (<div className="articleDescription"><p>this is the static mock description of the artivle.</p></div>);
+it('renders Article description', ()=> {
+    const description = (<div className="articleDescription"><p>this is the static mock description of the article.</p></div>);
     expect(wrapper.contains(description)).toEqual(true);
 })
+
+it('renders Article created date', () =>{
+const createdDate = (<div className="createdDate">Created: 08/11/2020</div>);
+expect(wrapper.contains(createdDate)).toEqual(true);
+});
+
+it('renders Artcile author', () =>{
+const author = (<div className="author">Author: Stuart Bradford</div>);
+expect(wrapper.contains(author)).toEqual(true);
+});
+
+it('renders Article tags', () =>{
+const tags = (<div className="tags">Tags: Developer, tutorial, Article</div>);
+expect(wrapper.contains(tags)).toEqual(true);
+});
 
     // Article Mocked Render:
     // [] create a static article component (only use HTML) to display a full article

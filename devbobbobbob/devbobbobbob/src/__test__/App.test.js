@@ -20,14 +20,14 @@ it ('renders App heading', () => {
   expect(wrapper.contains(title)).toEqual(true);
 });
 
+it('renders the <Articles /> component', ()=>{
+  expect(wrapper.containsMatchingElement(<Articles />)).toEqual(true);
+});
+
 // it("renders same as snapshot", () => {
 //   const tree = shallow(<App />);
 //   expect(toJson(tree)).toMatchSnapshot();
 // });
-
-it('renders the <Articles /> component', ()=>{
-  expect(wrapper.containsMatchingElement(<Articles />)).toEqual(true);
-});
 
 });
 

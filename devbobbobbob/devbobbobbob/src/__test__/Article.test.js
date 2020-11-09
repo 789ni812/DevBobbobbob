@@ -21,11 +21,16 @@ it ('renders Article title', () => {
 });
 
 
-it ('render Article description', ()=> {
-    
+it('render Article description', ()=> {
+    const description = (<div className="articleDescription"><p>this is the static mock description of the artivle.</p></div>);
+    expect(wrapper.contains(description)).toEqual(true);
 })
+
     // Article Mocked Render:
     // [] create a static article component (only use HTML) to display a full article
+    // [] Wire up Article to Articles component
+    // [] Wire up Articles component to App component
+    // [] Add these fields to article component
     //     [] title
     //     [] description
     //     [] date

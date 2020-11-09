@@ -7,11 +7,11 @@ describe ('<Article />', ()=> {
         shallow(<Article />);
     });
 
-
-    // it('renders the title of the article', () => {
-    //         expect(wrapper.find("h1").text()).toContain("this is the static mock article title.");
-    //       });
-    
+it ('renders Article title', () => {
+    const wrapper = shallow(<Article />);
+    const title = (<h1>this is the static mock article title.</h1>);
+    expect(wrapper.contains(title)).toEqual(true);
+})
     // Article Mocked Render:
     // [] create a static article component (only use HTML) to display a full article
     //     [] title

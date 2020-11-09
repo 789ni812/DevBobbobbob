@@ -21,7 +21,7 @@ Articles:
 
     Article Mocked Render:
         [] create a static article component (only use HTML) to display a full article
-            [] title
+            [x] title
             [] description
             [] date
             [] author

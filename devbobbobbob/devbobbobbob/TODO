@@ -2,7 +2,8 @@ TDD for DevBob
 
 App:
     [x] Verify first tests are running correctly
-    [] Wire up article components into App component when all of Articles is complete.
+    [] Wire up article components into Articles component
+    [] Wire up Article component to App component
 Articles:
 
     Mock Article data:

@@ -9,19 +9,20 @@ Articles:
     Mock Article data:
         [] Write 2 mock articles as an array of objects
 
-        Add: 
+        Add to article object: 
             [] title
             [] description
             [] date
             [] author
             [] tags
+            [] publishStatus
     Article List:
-        [] Show list of articles 
+        [] Show list of articles from mock array
             [] show name
             [] arrange by latest date     
 
     Article Mocked Render:
-        [] create a static article component (only use HTML) to display a full article
+        [x] create a static article component (only use HTML) to display a full article
             [x] title
             [x] description
             [x] date

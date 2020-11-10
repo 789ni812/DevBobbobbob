@@ -23,7 +23,7 @@ it ('renders Article title', () => {
 
 it('renders Article description', ()=> {
     const description = (<div className="articleDescription"><p>this is the static mock description of the article.</p></div>);
-    expect(wrapper.contains(description)).toEqual(true);
+   expect(wrapper.contains(description)).toEqual(true);
 })
 
 it('renders Article created date', () =>{
@@ -40,15 +40,4 @@ it('renders Article tags', () =>{
 const tags = (<div className="tags">Tags: Developer, tutorial, Article</div>);
 expect(wrapper.contains(tags)).toEqual(true);
 });
-
-    // Article Mocked Render:
-    // [] create a static article component (only use HTML) to display a full article
-    // [] Wire up Article to Articles component
-    // [] Wire up Articles component to App component
-    // [] Add these fields to article component
-    //     [] title
-    //     [] description
-    //     [] date
-    //     [] author
-    //     [] tags
 });

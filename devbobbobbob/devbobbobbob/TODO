@@ -7,15 +7,16 @@ App:
 Articles:
 
     Mock Article data:
-        [] Write 2 mock articles as an array of objects
+        [x] Research how to test an array of objects
+        [x] Write 3 mock articles as an array of objects
 
         Add to article object: 
-            [] title
-            [] description
-            [] date
-            [] author
-            [] tags
-            [] publishStatus
+            [x] title
+            [x] description
+            [x] date
+            [x] author
+            [x] tags
+            [x] publishStatus
     Article List:
         [] Show list of articles from mock array
             [] show name

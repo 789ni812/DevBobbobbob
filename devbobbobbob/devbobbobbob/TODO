@@ -1,4 +1,3 @@
-TDD for DevBob
 
 App:
     [x] Verify first tests are running correctly
@@ -6,7 +5,32 @@ App:
     [x] Wire up Article component to App component
 Articles:
 
-    Mock Article data:
+    Article List:
+    [] Show list of articles from mock array
+        [] show name
+        [] arrange by latest date         
+        
+        [] Research how to create unique links to article
+        [] Implement unique links for each article
+    
+    Article Wired up:
+        [] create article component to display a full article
+                [] title
+                [] description
+                [] date
+                [] author
+                [] tags
+
+
+    Article API:
+        [] Research how to view content from an headless Drupal 9 platform
+        
+        [] Write next steps based on research
+
+
+------
+## DONE
+Mock Article data:
         [x] Research how to test an array of objects
         [x] Write 3 mock articles as an array of objects
 
@@ -17,10 +41,6 @@ Articles:
             [x] author
             [x] tags
             [x] publishStatus
-    Article List:
-        [] Show list of articles from mock array
-            [] show name
-            [] arrange by latest date     
 
     Article Mocked Render:
         [x] create a static article component (only use HTML) to display a full article
@@ -30,10 +50,4 @@ Articles:
             [x] author
             [x] tags
     
-    Article Wired up:
-        [] create article component to display a full article
-            [] title
-            [] description
-            [] date
-            [] author
-            [] tags
+    

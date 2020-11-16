@@ -19,11 +19,27 @@ describe('Component - Article', ()=>{
         expect(title.length).toBe(1);
     })
     
-    
+    test('Description', () =>{
+        const description = findByTestAttr(wrapper, 'articleDescription');
+        expect(description.length).toBe(1);
+    })
+
+    test('createdDate', () =>{
+        const createdDate = findByTestAttr(wrapper, 'articleCreatedDate');
+        expect(createdDate.length).toBe(1);
+    })
+
+    test('author', () =>{
+        const author = findByTestAttr(wrapper, 'articleAuthor');
+        expect(author.length).toBe(1);
+    })
 
 
+    test('tags', () =>{
+        const tags = findByTestAttr(wrapper, 'articleTags');
+        expect(tags.length).toBe(1);
+    })
 
-    
     })
 })
 

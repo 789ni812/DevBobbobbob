@@ -1,4 +1,4 @@
-//import checkPropTypes from 'check-prop-types';
+import checkPropTypes from 'check-prop-types';
 
 /**
  * Return node(s) with the given data-test attrubute. 
@@ -11,11 +11,11 @@ export const findByTestAttr = (wrapper, val) => {
 }
 
 
-// export const checkProps = (component, conformingProps) => {
-//     const propError = checkPropTypes(
-//         component.propTypes,
-//         conformingProps,
-//         'prop',
-//         component.name);
-//     expect(propError).toBeUndefined();
-// }
+export const checkProps = (component, conformingProps) => {
+    const propError = checkPropTypes(
+        component.propTypes,
+        conformingProps,
+        'prop',
+        component.name);
+    expect(propError).toBeUndefined();
+}

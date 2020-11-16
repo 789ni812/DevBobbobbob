@@ -1,5 +1,5 @@
 import { shallow } from 'enzyme';
-import { findByTestAttr } from '../../test/testUtils';
+import { checkProps, findByTestAttr } from '../../test/testUtils';
 import Article from '../components/Articles/Article';
 
 describe('Component - Article', ()=>{
@@ -41,6 +41,20 @@ describe('Component - Article', ()=>{
     })
 
     })
-})
+
+    describe ('Dynamic Article props render', ()=>{
+        const mockedProps = {
+            article: [
+                {
+                    title: 'mockedTitle',
+               }
+            ]
+        }
+        test('does not throw warning with expected props',()=>{
+checkProps(Article, mockedProps);
+        })
+    })
+
+});
 
 

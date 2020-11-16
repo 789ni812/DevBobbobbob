@@ -1,10 +1,13 @@
 
+
 import Article from './Article';
 
 function Articles()  {
 
 return(
-<div><Article /></div>
+<div data-test="component-Articles">
+    <Article />
+</div>
 )
 }
 

@@ -43,6 +43,8 @@ describe('Component - Article', ()=>{
     })
 
     describe ('Dynamic Article props render', ()=>{
+
+
         const mockedProps = {
             article: [
                 {

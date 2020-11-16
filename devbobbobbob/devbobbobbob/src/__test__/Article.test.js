@@ -1,20 +1,27 @@
+
 import { shallow } from 'enzyme';
 import { checkProps, findByTestAttr } from '../../test/testUtils';
 import Article from '../components/Articles/Article';
+import { articlesArray } from '../components/Articles/mockedArticleArray';
 
-const mockedProps = {
-    article: [
-        {
-            title: 'mockedTitle',
-       }
-    ]
+
+
+/**
+ * Factory function to create a ShallowWrapper for the Article component.
+ * @function setup
+ * @param {object} props - Component props, specific to this setup
+ * @return {ShallowWrapper} 
+ */
+const setup = () => {
+    return shallow(<Article />)
+
 }
 
 describe('Component - Article', ()=>{
-    let wrapper;
-    beforeEach(()=> {
-    wrapper = shallow(<Article />)
-    })
+ let wrapper;
+ beforeEach(() =>{
+     wrapper = setup();
+ })  
     
     test('Article component renders', ()=>{
     const component = findByTestAttr(wrapper, 'component-article');
@@ -51,12 +58,26 @@ describe('Component - Article', ()=>{
     })
 
     describe ('Dynamic Article props render', ()=>{
+        
+        const setupWithProps = (props = {}) => {
+            const setupProps = {...articlesArray};
+            return shallow(<Article {...setupProps} />)
+        }
 
+        let wrapper = setupWithProps();
+        console.log(wrapper.debug());
 
       
         test('does not throw warning with expected props',()=>{
-checkProps(Article, mockedProps);
+checkProps(Article, articlesArray);
+
         })
+
+        test('Check articleTitle in state is the same as the ArticleArray.', () => {
+           const title = findByTestAttr(wrapper, 'articleTitle').text();
+           expect(articlesArray[0].title.length).toBe(title.length);
+        });
+        
     })
 
 });

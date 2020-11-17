@@ -24,10 +24,5 @@ it('renders the <Articles /> component', ()=>{
   expect(wrapper.containsMatchingElement(<Articles />)).toEqual(true);
 });
 
-// it("renders same as snapshot", () => {
-//   const tree = shallow(<App />);
-//   expect(toJson(tree)).toMatchSnapshot();
-// });
-
 });
 

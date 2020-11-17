@@ -1,8 +1,8 @@
 
 import { shallow } from 'enzyme';
-import { checkProps, findByTestAttr } from '../../test/testUtils';
-import Article from '../components/Articles/Article';
-import { articlesArray } from '../components/Articles/mockedArticleArray';
+import { checkProps, findByTestAttr } from '../../../test/testUtils';
+import Article from './Article';
+import { articlesArray } from './mockedArticleArray';
 
 
 

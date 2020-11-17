@@ -1,28 +1,24 @@
 import React from "react";
 import { shallow } from "enzyme";
 import App from "./App";
-import Articles from "./components/Articles/Articles";
+import { findByTestAttr } from "../test/testUtils";
 
 
-describe('<App />', () => {
+describe('Component - App', () => {
   let wrapper;
   beforeAll(()=>{
       wrapper = shallow(<App />);
   });
 
-
-it("renders without crashing", () => {
-  shallow(<App />);
+test('App component renders', ()=>{
+  const component = findByTestAttr(wrapper, 'component-app');
+  expect(component.length).toBe(1);
 });
 
-it ('renders App heading', () => {
-  const title = (<h1>DevBobBobBob</h1>);
-  expect(wrapper.contains(title)).toEqual(true);
-});
-
-it('renders the <Articles /> component', ()=>{
-  expect(wrapper.containsMatchingElement(<Articles />)).toEqual(true);
-});
+test('Site title renders', ()=>{
+  const title = findByTestAttr(wrapper, 'site-title');
+  expect(title.length).toBe(1);
+})
 
 });
 

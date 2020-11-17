@@ -18,6 +18,11 @@ test('App component renders', ()=>{
 test('Site title renders', ()=>{
   const title = findByTestAttr(wrapper, 'site-title');
   expect(title.length).toBe(1);
+});
+
+test('Articles component renders', ()=>{
+  const articles = findByTestAttr(wrapper, 'component-articles');
+  expect(articles.length).toBe(1);
 })
 
 });

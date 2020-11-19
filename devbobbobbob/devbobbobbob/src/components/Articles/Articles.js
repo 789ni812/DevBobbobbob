@@ -1,12 +1,19 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { articlesArray } from './mockedArticleArray';
 import Article from './Article';
 
 function Articles()  {
-    const [articleTitle] = useState(articlesArray[0].title);
+    
 return(
 <div data-test="component-Articles">
-    <Article articleTitle = {articleTitle} />
+<ul>
+    {
+    articlesArray.map((article) =>
+        <li key={article.id} data-test="li-articleTitle">{article.title}</li>
+        )
+    }
+</ul>
+    <Article />
 </div>
 )
 }

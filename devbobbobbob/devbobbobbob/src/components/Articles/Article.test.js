@@ -36,8 +36,8 @@ describe('Component - Article', ()=>{
      });
     
     test('Description', () =>{
-        const description = findByTestAttr(wrapper, 'articleDescription');
-        expect(description.length).toBe(1);
+        const description = findByTestAttr(wrapper, 'articleDescription').text();
+        expect(articlesArray[0].description.length).toBe(description.length)
     })
 
     test('createdDate', () =>{

@@ -13,7 +13,7 @@ return (
 <h1 data-test="articleTitle">{article.title}</h1>
     <div data-test="articleDescription">{article.description}</div>
     <div data-test="articleCreatedDate">{article.createdDate}</div>
-    <div data-test="articleAuthor"></div>
+    <div data-test="articleAuthor">{article.author}</div>
     <div data-test="articleTags"></div>
     </div>
 )    

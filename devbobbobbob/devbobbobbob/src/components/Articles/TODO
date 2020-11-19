@@ -9,7 +9,7 @@ Article component:
         [x] articleTitle
         [x] articleDescription
         [x] articleCreatedDate
-        [] articleAuthor
+        [x] articleAuthor
         [] articleTags
 
 [ ] When user click on Article links from Articles component - display just that user selected article information

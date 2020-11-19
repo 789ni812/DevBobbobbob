@@ -46,8 +46,8 @@ describe('Component - Article', ()=>{
     })
 
     test('author', () =>{
-        const author = findByTestAttr(wrapper, 'articleAuthor');
-        expect(author.length).toBe(1);
+        const author = findByTestAttr(wrapper, 'articleAuthor').text();
+        expect(articlesArray[0].author.length).toBe(author.length)
     })
 
 

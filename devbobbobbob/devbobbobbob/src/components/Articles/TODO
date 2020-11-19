@@ -1,8 +1,12 @@
 ------
 ## Next
-[ ] Move the state management out of the Article componet and into its parent (articles component)
+[x ] Move the state management out of the Article componet and into its parent (articles component)
 
 [] Send appropriate Article information from the Article component to the Article component via props
+
+[ ] When user click on Article links from Articles component - display just that user selected article information
+
+
 
 
 Article component:

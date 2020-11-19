@@ -13,7 +13,7 @@ import { articlesArray } from './mockedArticleArray';
  * @return {ShallowWrapper} 
  */
 const setup = () => {
-    return shallow(<Article />)
+    return shallow(<Article article={articlesArray[0]}/>)
 
 }
 
@@ -28,11 +28,12 @@ describe('Component - Article', ()=>{
     expect(component.length).toBe(1);
     })
 
-    describe ('Article properties load:', () => {
-    test('Title', () =>{
-        const title = findByTestAttr(wrapper, 'articleTitle');
-        expect(title.length).toBe(1);
-    })
+    describe ('Article properties and array properties render:', () => {
+    
+    test('Check articleTitle in state is the same as the ArticleArray.', () => {
+        const title = findByTestAttr(wrapper, 'articleTitle').text();
+        expect(articlesArray[0].title.length).toBe(title.length);
+     });
     
     test('Description', () =>{
         const description = findByTestAttr(wrapper, 'articleDescription');
@@ -59,24 +60,12 @@ describe('Component - Article', ()=>{
 
     describe ('Dynamic Article props render', ()=>{
         
-        const setupWithProps = (props = {}) => {
-            const setupProps = {...articlesArray};
-            return shallow(<Article {...setupProps} />)
-        }
-
-        let wrapper = setupWithProps();
-        console.log(wrapper.debug());
-
-      
         test('does not throw warning with expected props',()=>{
 checkProps(Article, articlesArray);
 
         })
 
-        test('Check articleTitle in state is the same as the ArticleArray.', () => {
-           const title = findByTestAttr(wrapper, 'articleTitle').text();
-           expect(articlesArray[0].title.length).toBe(title.length);
-        });
+        
         
     })
 

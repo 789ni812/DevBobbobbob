@@ -8,7 +8,7 @@ Article component:
     [] Test Article props contain all Article property types:
         [x] articleTitle
         [x] articleDescription
-        [] articleCreatedDate
+        [x] articleCreatedDate
         [] articleAuthor
         [] articleTags
 

@@ -41,8 +41,8 @@ describe('Component - Article', ()=>{
     })
 
     test('createdDate', () =>{
-        const createdDate = findByTestAttr(wrapper, 'articleCreatedDate');
-        expect(createdDate.length).toBe(1);
+      const createdDate = findByTestAttr(wrapper, 'articleCreatedDate').text();
+      expect(articlesArray[0].createdDate.length).toBe(createdDate.length);
     })
 
     test('author', () =>{

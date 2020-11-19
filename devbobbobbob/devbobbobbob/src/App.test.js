@@ -25,5 +25,11 @@ test('Articles component renders', ()=>{
   expect(articles.length).toBe(1);
 })
 
+test('Markdown Renderer component renders', () => {
+ const MarkdownRenderer = findByTestAttr(wrapper, 'component-markdownRenderer')
+ expect(MarkdownRenderer.length).toBe(1);
+})
+
+
 });
 

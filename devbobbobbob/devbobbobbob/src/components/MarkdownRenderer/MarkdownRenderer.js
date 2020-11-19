@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import testMarkdownFile from './testMarkdownFile.md';
+import testMarkdownFile from '../../assets/ProjectReferenceMarkdownFiles/test.md';
 import ReactMarkdown from 'react-markdown';
 
 class MarkdownRenderer extends Component {
@@ -16,7 +16,11 @@ class MarkdownRenderer extends Component {
 
   render() {
     const { markdown } = this.state;
-    return <ReactMarkdown source={markdown} />;
+    return (
+    <div data-test="component-markdownRenderer">
+      <ReactMarkdown source={markdown} />
+      </div>
+    )
   }
 }
 

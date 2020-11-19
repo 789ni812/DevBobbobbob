@@ -1,5 +1,9 @@
 ------
 ## Next
+[ ] Move the state management out of the Article componet and into its parent (articles component)
+
+[] Send appropriate Article information from the Article component to the Article component via props
+
 
 Article component:
     [] Test Article props contain all Article property types:

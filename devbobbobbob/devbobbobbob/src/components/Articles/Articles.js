@@ -13,7 +13,7 @@ return(
         )
     }
 </ul>
-    <Article />
+    <Article article = {articlesArray[0]}/>
 </div>
 )
 }

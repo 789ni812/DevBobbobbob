@@ -5,12 +5,12 @@ import React from 'react';
 
 
 
-function Article() {
+function Article(props) {
 
 
 return (
 <div data-test="component-article">
-    <h1 data-test="articleTitle"></h1>
+<h1 data-test="articleTitle">{props.article.title}</h1>
     <div data-test="articleDescription"></div>
     <div data-test="articleCreatedDate"></div>
     <div data-test="articleAuthor"></div>

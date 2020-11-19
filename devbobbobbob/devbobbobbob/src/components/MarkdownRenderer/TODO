@@ -1,0 +1,7 @@
+MarkDown Renderer:
+
+    [] Read all my markdown files under the (00Project-Reference-Library\00MyVsNotes)
+        [ ] Check out the project reference folder into a subfolder inside the src folder 
+    (create-react-app stops files from being imported outside of the src folder) 
+        [ ] Research How to list files in the 00project-reference.... directory 
+        [ ] implement list files in the 00project-reference....  directory

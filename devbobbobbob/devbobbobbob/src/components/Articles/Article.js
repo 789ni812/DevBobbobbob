@@ -1,13 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 //import PropTypes from 'prop-types';
-import { articlesArray } from './mockedArticleArray';
 
 
 
-console.log(articlesArray)
 
-function Article(props) {
-    const [articleTitle] = useState(articlesArray[0].title);
+
+function Article({articleTitle}) {
+
 
 
 return (

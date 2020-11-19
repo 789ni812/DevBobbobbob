@@ -2,15 +2,13 @@
 ## Next
 [x ] Move the state management out of the Article componet and into its parent (articles component)
 
-[] Send appropriate Article information from the Article component to the Article component via props
-
-Article component:
-    [] Test Article props contain all Article property types:
+[] Add following articleArray props to the Article component
         [x] articleTitle
         [x] articleDescription
         [x] articleCreatedDate
         [x] articleAuthor
-        [] articleTags
+        [] articleTags (these are an array)
+            [] Research how to test for arrays 
 
 [ ] When user click on Article links from Articles component - display just that user selected article information
 

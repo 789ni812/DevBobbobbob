@@ -6,11 +6,11 @@
 
 Article component:
     [] Test Article props contain all Article property types:
-        [x] mockedTitle
-        [] mockedDescription
-        [] mockedCreatedDate
-        [] mockedAuthor
-        [] mockedTags
+        [x] articleTitle
+        [x] articleDescription
+        [] articleCreatedDate
+        [] articleAuthor
+        [] articleTags
 
 [ ] When user click on Article links from Articles component - display just that user selected article information
 

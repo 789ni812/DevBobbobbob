@@ -4,18 +4,20 @@
 
 [] Send appropriate Article information from the Article component to the Article component via props
 
+Article component:
+    [] Test Article props contain all Article property types:
+        [x] mockedTitle
+        [] mockedDescription
+        [] mockedCreatedDate
+        [] mockedAuthor
+        [] mockedTags
+
 [ ] When user click on Article links from Articles component - display just that user selected article information
 
 
 
 
-Article component:
-    [] Test Article props contain all Article property types:
-        mockedTitle
-        mockedDescription
-        mockedCreatedDate
-        mockedAuthor
-        mockedTags
+
 
 
 

@@ -7,7 +7,6 @@ import React from 'react';
 
 function Article({article}) {
 
-console.log(article)
 return (
 <div data-test="component-article">
 <h1 data-test="articleTitle">{article.title}</h1>

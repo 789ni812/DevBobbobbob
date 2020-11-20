@@ -7,8 +7,9 @@
         [x] articleDescription
         [x] articleCreatedDate
         [x] articleAuthor
-        [] articleTags (these are an array)
-            [] Research how to test for arrays 
+        [x] articleTags (these are an array)
+            [x] Research how to test for arrays 
+            (Note used toContain (https://stackoverflow.com/questions/41916612/jest-jasmine-tocontain-fails-even-though-matching-values-are-present))
 
 [ ] When user click on Article links from Articles component - display just that user selected article information
 

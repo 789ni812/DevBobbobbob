@@ -12,6 +12,12 @@
             (Note used toContain (https://stackoverflow.com/questions/41916612/jest-jasmine-tocontain-fails-even-though-matching-values-are-present))
 
 [ ] When user click on Article links from Articles component - display just that user selected article information
+    [x] Create ArticleNavigation component
+    [x] include ArticleNAvigation to Articles component
+    [ ] ArticleNavigation to render list of articles
+    [ ] Ability for user to click on a list item 
+    [ ] Clicking article list item triggers the loading of the relevant Article in Article Component
+     
 
 
 

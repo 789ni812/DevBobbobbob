@@ -4,6 +4,7 @@ import { shallow } from 'enzyme';
 
 import { articlesArray } from './mockedArticleArray';
 import Articles from './Articles.js';
+
 let wrapper;
 
 const setup = (props = {} ) => {
@@ -14,10 +15,14 @@ const setup = (props = {} ) => {
 describe('<Articles />', ()=>{
 
     it('renders without crashing', () => {
-    const component = findByTestAttr(setup(), 'component-Articles');
-    
+    const component = findByTestAttr(setup(), 'component-Articles');    
     expect(component.length).toBe(1);
     });
+
+    it('Renders ArticleNavigation component without crashing', ()=> {
+        const navigation = findByTestAttr(setup(),'component-ArticleNavigation');
+        expect(navigation.length).toBe(1)
+    })
 
     it('Renders 3 items from the articlesArray', () => {
         wrapper = shallow(<Articles />)

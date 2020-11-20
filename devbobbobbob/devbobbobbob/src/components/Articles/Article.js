@@ -7,14 +7,20 @@ import React from 'react';
 
 function Article({article}) {
 
-
+console.log(article)
 return (
 <div data-test="component-article">
 <h1 data-test="articleTitle">{article.title}</h1>
     <div data-test="articleDescription">{article.description}</div>
     <div data-test="articleCreatedDate">{article.createdDate}</div>
     <div data-test="articleAuthor">{article.author}</div>
-    <div data-test="articleTags"></div>
+    <div data-test="articleTags">
+        <ul>
+        {article.tags.map((tag) =>
+        <li>{tag}</li>
+        )}
+    </ul>
+    </div>
     </div>
 )    
 };

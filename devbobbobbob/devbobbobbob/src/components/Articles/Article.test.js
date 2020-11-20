@@ -51,9 +51,13 @@ describe('Component - Article', ()=>{
     })
 
 
-    test('tags', () =>{
-        const tags = findByTestAttr(wrapper, 'articleTags');
-        expect(tags.length).toBe(1);
+    test('Delme static tags from array ', () =>{
+expect(articlesArray[0].tags).toEqual(expect.arrayContaining(['developer']))
+    })
+
+    test('Tags array contains the tag `developer`', () => {
+        const tags = findByTestAttr(wrapper, 'articleTags').text();
+        expect(tags).toContain('developer')
     })
 
     })

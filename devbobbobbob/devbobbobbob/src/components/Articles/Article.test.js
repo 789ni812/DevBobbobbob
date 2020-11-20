@@ -51,10 +51,6 @@ describe('Component - Article', ()=>{
     })
 
 
-    test('Delme static tags from array ', () =>{
-expect(articlesArray[0].tags).toEqual(expect.arrayContaining(['developer']))
-    })
-
     test('Tags array contains the tag `developer`', () => {
         const tags = findByTestAttr(wrapper, 'articleTags').text();
         expect(tags).toContain('developer')

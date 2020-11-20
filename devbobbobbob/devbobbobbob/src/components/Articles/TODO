@@ -16,8 +16,14 @@
     [x] include ArticleNAvigation to Articles component
     [x ] ArticleNavigation to render list of articles
     [ ] Ability for user to click on a list item 
+        [ ] create ArticleSelected state (default to null)
+        
     [ ] Clicking article list item triggers the loading of the relevant Article in Article Component
-     
+        [ ] create an onClick event that sets the ArticleSelected state to the ID of the article
+
+        [ ] research if a useEffect or similar is required to refresh the update to the state or anything.
+
+        [ ] Enable the Article component to load with information from the articleSelected state
 
 
 

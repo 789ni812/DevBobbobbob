@@ -1,4 +1,4 @@
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import { findByTestAttr } from '../../../test/testUtils';
 
 import ArticleNavigation from './ArticleNavigation';
@@ -11,7 +11,14 @@ let wrapper;
 const setup = () => {
     return shallow(<ArticleNavigation articles={articlesArray} />)
 }
-describe('Article Navigation', ()=> {
+
+const wrapperM = () => { 
+    return mount(
+    <ArticleNavigation />,
+    { context: { articleSelected: 'none' } },
+  );
+}
+describe('<ArticleNavigation />', ()=> {
     test('Article Navigation component renders without crashing', () => {
 wrapper = setup();
         const articleNav = findByTestAttr(wrapper, 'component-article-navigation')
@@ -21,5 +28,16 @@ wrapper = setup();
     test('Amount of Articles in the articleArray and articleNaviagtion state are the same', () => {
         const articles = findByTestAttr(wrapper, 'list-article');
         expect(articles.length).toBe(articlesArray.length)
+    })
+
+    describe('Article navigation links', ()=>{
+        
+        test('Confirm ArticleSelected state starts default state of `none`', () => {
+            
+           
+              //console.log(wrapperM.debug())
+//             expect(wrapperM.context().articleSelected).to.equal('none');
+// expect(wrapperM.context('articleSelected')).to.equal('none');
+        })
     })
 })

@@ -16,7 +16,7 @@ return (
     <div data-test="articleTags">
         <ul>
         {article.tags.map((tag) =>
-        <li>{tag}</li>
+        <li key={tag}>{tag}</li>
         )}
     </ul>
     </div>

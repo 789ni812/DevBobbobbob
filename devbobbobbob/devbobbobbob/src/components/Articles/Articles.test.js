@@ -24,11 +24,7 @@ describe('<Articles />', ()=>{
         expect(navigation.length).toBe(1)
     })
 
-    it('Renders 3 items from the articlesArray', () => {
-        wrapper = shallow(<Articles />)
-const li = findByTestAttr(wrapper, 'li-articleTitle')
-expect(li.length).toBe(3);
-    })
+    
 it('does not throw warning with expected props', () => {
 checkProps(Articles, articlesArray)
 // TODO copy example of the guessedWord component to flesh out the check props 

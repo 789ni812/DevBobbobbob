@@ -1,9 +1,9 @@
 
 Quick Fire round:
-    [ ] stop article component rendering by default in Articles component
+    [x ] stop article component rendering by default in Articles component
     [x] comment out MArkdown test example - to review later
     
-    ## REact router
+    ## React router
     [ ] Install react-router-dom 
     [ ] Article list to render a link to the actual article
     [ ] Article navigation to render a back to articles list

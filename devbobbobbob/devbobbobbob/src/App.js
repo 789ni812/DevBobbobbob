@@ -6,7 +6,7 @@ function App() {
     <div data-test="component-app">
         <h1 data-test="site-title">DevBobBobBob</h1>
         <Articles data-test="component-articles" />
-        <MarkdownRenderer data-test="component-markdownRenderer" />
+  {/*<MarkdownRenderer data-test="component-markdownRenderer" />*/ }
     </div>
   );
 };

@@ -1,5 +1,20 @@
+
+Quick Fire round:
+    [ ] remove article component from app.js
+    [ ] comment out MArkdown test example - to review later
+    
+    ## REact router
+    [ ] Install react-router-dom 
+    [ ] Article list to render a link to the actual article
+    [ ] Article navigation to render a back to articles list
+    [ ] Article navigation to render tags as links 
+    [ ] Depending on tag click from article navigation will render a page specific to that tag
+
+
+
 ------
 ## Next
+
 [x ] Move the state management out of the Article componet and into its parent (articles component)
 
 [] Add following articleArray props to the Article component
@@ -16,6 +31,7 @@
     [x] include ArticleNAvigation to Articles component
     [x ] ArticleNavigation to render list of articles
     [ ] Ability for user to click on a list item 
+    [] wire up react router to manage urls
         [ ] create ArticleSelected state (default to null)
         
     [ ] Clicking article list item triggers the loading of the relevant Article in Article Component

@@ -4,7 +4,7 @@ Quick Fire round:
     [x] comment out MArkdown test example - to review later
     
     ## React router
-    [ ] Install react-router-dom 
+    [x ] Install react-router-dom 
     [ ] Article list to render a link to the actual article
     [ ] Article navigation to render a back to articles list
     [ ] Article navigation to render tags as links 

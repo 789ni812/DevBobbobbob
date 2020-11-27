@@ -1,7 +1,7 @@
 
 Quick Fire round:
-    [ ] remove article component from app.js
-    [ ] comment out MArkdown test example - to review later
+    [ ] stop article component rendering by default in Articles component
+    [x] comment out MArkdown test example - to review later
     
     ## REact router
     [ ] Install react-router-dom 

@@ -1,6 +1,5 @@
 import React from 'react';
 import { articlesArray } from './mockedArticleArray';
-import Article from './Article';
 import ArticleNavigation from './ArticleNavigation';
 function Articles()  {
     
@@ -10,7 +9,7 @@ return(
     <ArticleNavigation articles={articlesArray} />
     </div>
 
-    <Article article = {articlesArray[0]}/>
+    
 </div>
 )
 }

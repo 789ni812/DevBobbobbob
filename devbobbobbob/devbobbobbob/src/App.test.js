@@ -23,10 +23,6 @@ describe("Component - App", () => {
     const mainNavigation = findByTestAttr(wrapper, "component-mainNavigation");
     expect(mainNavigation.length).toBe(1);
   });
-  test("Articles component renders", () => {
-    const articles = findByTestAttr(wrapper, "component-articles");
-    expect(articles.length).toBe(1);
-  });
 
   // Switched off Markdown render while I focus on Article build
   // test('Markdown Renderer component renders', () => {

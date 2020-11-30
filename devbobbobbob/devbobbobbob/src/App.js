@@ -1,5 +1,5 @@
 import Articles from './components/Articles/Articles';
-import MarkdownRenderer from './components/MarkdownRenderer/MarkdownRenderer';
+// import MarkdownRenderer from './components/MarkdownRenderer/MarkdownRenderer';
 
 function App() {
   return (

@@ -10,7 +10,6 @@ function Home() {
 function MainNavigation() {
   return (
     <div>
-      <h2>component loaded: Main Navigation</h2>
       <ul>
         <li>
           <Link to="/" data-test="link-homepage">

@@ -6,6 +6,9 @@ Quick Fire round:
     ## React router
     [x ] Install react-router-dom 
     [ ] Article list to render a link to the actual article
+            [ ]  Research how route will work with dynamic article.id
+            //https://codesandbox.io/s/react-router-url-parameters-rrbsb?from-embed=&file=/example.js
+            [ ] Ensure Props is sent to Article from react-router
     [ ] Article navigation to render a back to articles list
     [ ] Article navigation to render tags as links 
     [ ] Depending on tag click from article navigation will render a page specific to that tag

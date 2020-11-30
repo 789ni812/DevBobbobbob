@@ -5,11 +5,7 @@ function Articles()  {
     
 return(
 <div data-test="component-Articles">
-<div data-test="component-ArticleNavigation">
-    <ArticleNavigation articles={articlesArray} />
-    </div>
-
-    
+    <div data-test="component-ArticleNavigation"><ArticleNavigation articles={articlesArray} /></div>
 </div>
 )
 }

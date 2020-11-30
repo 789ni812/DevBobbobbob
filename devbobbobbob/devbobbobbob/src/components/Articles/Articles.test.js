@@ -5,8 +5,6 @@ import { shallow } from 'enzyme';
 import { articlesArray } from './mockedArticleArray';
 import Articles from './Articles.js';
 
-let wrapper;
-
 const setup = (props = {} ) => {
  const setupProps = {...articlesArray}
  return shallow(<Articles {...setupProps} />);
@@ -38,5 +36,4 @@ checkProps(Articles, articlesArray)
     //     console.log(wrapper.debug());
     //     expect(articlesArray[0].title.length).toBe(title.length);
     //  });
-
 });

@@ -1,28 +1,25 @@
-import React from 'react';
+import React from "react";
 //import PropTypes from 'prop-types';
 
+function Article(props) {
+  const article = props.articles[props.selectedArticle];
 
-
-
-
-function Article({article}) {
-
-return (
-<div data-test="component-article">
-<h1 data-test="articleTitle">{article.title}</h1>
-    <div data-test="articleDescription">{article.description}</div>
-    <div data-test="articleCreatedDate">{article.createdDate}</div>
-    <div data-test="articleAuthor">{article.author}</div>
-    <div data-test="articleTags">
+  return (
+    <div data-test="component-article">
+      <h1 data-test="articleTitle">{article.title}</h1>
+      <div data-test="articleDescription">{article.description}</div>
+      <div data-test="articleCreatedDate">{article.createdDate}</div>
+      <div data-test="articleAuthor">{article.author}</div>
+      <div data-test="articleTags">
         <ul>
-        {article.tags.map((tag) =>
-        <li key={tag}>{tag}</li>
-        )}
-    </ul>
+          {article.tags.map((tag) => (
+            <li key={tag}>{tag}</li>
+          ))}
+        </ul>
+      </div>
     </div>
-    </div>
-)    
-};
+  );
+}
 
 // TODO Add this prop types checking.
 // Article.propTypes = {
@@ -32,6 +29,5 @@ return (
 //         })
 //     ).isRequired,
 // };
-
 
 export default Article;

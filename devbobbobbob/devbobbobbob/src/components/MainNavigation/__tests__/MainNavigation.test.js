@@ -3,7 +3,6 @@ import { shallow } from "enzyme";
 import { findByTestAttr } from "../../../../test/testUtils";
 import MainNavigation from "../MainNavigation";
 
-// TODO Create Links to Home page (and /), article and markdown
 let wrapper;
 beforeAll(() => {
   wrapper = shallow(<MainNavigation />);

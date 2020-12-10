@@ -12,7 +12,6 @@ const DevBobResourcesList = () => {
     DevBobResourcesService.getAll().then((response) => {
       console.log("response: ", response);
       setDevBobResources(response.data.data);
-      console.log("DevBobResources: ", devBobResources);
     });
   };
 
@@ -21,8 +20,8 @@ const DevBobResourcesList = () => {
       DevBobResourcesList.js loaded
       <ul>
         {devBobResources &&
-          devBobResources.map((resource, index) => (
-            <li>{resource.attributes.title}</li>
+          devBobResources.map((resource) => (
+            <li key={resource.id}>{resource.attributes.title}</li>
           ))}
       </ul>
     </div>

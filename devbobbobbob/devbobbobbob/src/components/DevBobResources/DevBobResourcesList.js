@@ -34,11 +34,22 @@ const DevBobResourcesList = () => {
       </ul>
       {currentResource ? (
         <div>
-          Current resource selected{currentResource.attributes.title}
+          Current resource selected
+          <h2>Title: {currentResource.attributes.title}</h2>
+          <p>{currentResource.attributes.field_notes}</p>
+          <p>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href={currentResource.attributes.field_external_reference.uri}
+            >
+              {currentResource.attributes.field_external_reference.uri}
+            </a>
+          </p>
           {console.log("CurrentResource: ", currentResource)}
         </div>
       ) : (
-        <div>Click a resource</div>
+        <div>Click a resource for more info...</div>
       )}
     </div>
   );

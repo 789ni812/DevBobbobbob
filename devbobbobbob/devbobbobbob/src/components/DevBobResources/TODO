@@ -6,10 +6,11 @@
     [x ] resource list will link to each resource detail view
     
         Display:    
-            [ ] title
-            [ ] URL as hyperlink
-            [ ] hyperlink opens in new window
+            [x] title
+            [ ] body
+            [x] URL as hyperlink
+            [x] hyperlink opens in new window
             [ ] Topics taxonomy from Drupal
-            
+
 
     [ ] Add resources component to the main navigation

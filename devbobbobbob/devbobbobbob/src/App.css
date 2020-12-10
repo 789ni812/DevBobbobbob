@@ -2,3 +2,21 @@
   background: #1e1e1e;
   color: #cccccc;
 }
+
+a {
+  color: #6a9955;
+}
+
+a:hover {
+  color: #b5cea8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  /* color: #6796e6; */
+  color: #4ec9b0;
+  /* color: #ce9178; */
+}

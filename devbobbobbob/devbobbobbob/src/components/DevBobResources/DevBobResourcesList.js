@@ -48,7 +48,6 @@ const DevBobResourcesList = () => {
               {currentResource.attributes.field_external_reference.uri}
             </a>
           </p>
-          {console.log("CurrentResource: ", currentResource)}
         </div>
       ) : (
         <div>Click a resource for more info...</div>

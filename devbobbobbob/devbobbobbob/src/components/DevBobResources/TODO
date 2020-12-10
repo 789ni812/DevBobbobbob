@@ -1,4 +1,6 @@
 #DevBobResrouces:
+    [ ] Rename DevBobResources to Resources
+    [ ] Add Tests    
     [x] get basic response from drupal site
     
     # List resources
@@ -15,4 +17,10 @@
 
 
     [x ] Add resources component to the main navigation
-    [ ] Add Tests
+    
+
+    ## Styling: 
+        [ ] Add icon for URL to show opens in external window
+
+    # Sometime / Maybe:
+        [ ] Add favourite functionality 

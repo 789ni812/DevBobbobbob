@@ -11,13 +11,11 @@ const DevBobResourcesList = () => {
 
   const retrieveResources = () => {
     DevBobResourcesService.getAll().then((response) => {
-      console.log("response: ", response);
       setDevBobResources(response.data.data);
     });
   };
 
   const setActiveResource = (resource) => {
-    console.log("setActiveResource");
     setCurrentResource(resource);
   };
 

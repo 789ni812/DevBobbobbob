@@ -11,6 +11,7 @@
             [x] URL as hyperlink
             [x] hyperlink opens in new window
             [ ] Topics taxonomy from Drupal
+                [ ] research how to get the taxonomy names 
 
 
     [ ] Add resources component to the main navigation

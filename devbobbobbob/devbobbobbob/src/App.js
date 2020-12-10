@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import MainNavigation from "./components/MainNavigation/MainNavigation";
-import DevBobResourcesList from "./components/DevBobResources/DevBobResourcesList";
+
 import "./App.css";
 function App() {
   return (
@@ -9,7 +9,6 @@ function App() {
       <div data-test="component-app" className="App">
         <h1 data-test="site-title">DevBobBobBob</h1>
         <MainNavigation data-test="component-mainNavigation" />
-        <DevBobResourcesList />
       </div>
     </BrowserRouter>
   );

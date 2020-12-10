@@ -7,7 +7,7 @@
     
         Display:    
             [x] title
-            [ ] body
+            [x] notes
             [x] URL as hyperlink
             [x] hyperlink opens in new window
             [ ] Topics taxonomy from Drupal

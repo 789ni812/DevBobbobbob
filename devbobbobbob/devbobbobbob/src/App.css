@@ -1,9 +1,12 @@
 .App {
   background: #1e1e1e;
   color: #cccccc;
+  /* color: #ce9178; */
+  /* color: #4ec9b0; */
 }
 
-a {
+a,
+.hyperlink {
   color: #6a9955;
 }
 
@@ -17,6 +20,6 @@ h3,
 h4,
 h5 {
   /* color: #6796e6; */
-  color: #4ec9b0;
+  color: #ce9178;
   /* color: #ce9178; */
 }

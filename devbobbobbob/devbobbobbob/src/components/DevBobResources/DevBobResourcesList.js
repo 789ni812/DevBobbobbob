@@ -27,7 +27,11 @@ const DevBobResourcesList = () => {
       <ul>
         {devBobResources &&
           devBobResources.map((resource) => (
-            <li key={resource.id} onClick={() => setActiveResource(resource)}>
+            <li
+              className="hyperlink"
+              key={resource.id}
+              onClick={() => setActiveResource(resource)}
+            >
               {resource.attributes.title}
             </li>
           ))}

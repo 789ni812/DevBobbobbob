@@ -5,6 +5,7 @@ const getAll = () => {
 };
 
 const findByTitle = (title) => {
+  // TODO Wire up finding of article
   return http.get(`/articles?title=${title}`);
 };
 

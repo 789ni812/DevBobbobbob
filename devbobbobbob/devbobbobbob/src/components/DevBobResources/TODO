@@ -1,0 +1,13 @@
+#DevBobResrouces:
+    [x] get basic response from drupal site
+    
+    # List resources
+    [ ] get list of all resources
+    [ ] resource list will link to each resource detail view
+
+    # resource details:
+
+    [ ] send id via props
+    [ ] check id (via match) to ensure have correct resource
+        Display:    
+            [ ] Plan what fields to display 

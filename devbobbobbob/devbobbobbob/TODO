@@ -7,4 +7,12 @@
     [ ] Add spacing around window of browser
     [ ] background color should fill entire window area
 
+# Tests:
+    [ ] Revoew components and what test need writing
+    [ ] Write some beviour tests
+    
+     ## Install Moxios for development:
+        [ ] review Udemy course on advanced REact (covers Moxios)
+        [ ] plan work out
+
 

@@ -2,7 +2,7 @@
     [x] get basic response from drupal site
     
     # List resources
-    [ ] get list of all resources
+    [ x] get list of all resources
     [ ] resource list will link to each resource detail view
 
     # resource details:

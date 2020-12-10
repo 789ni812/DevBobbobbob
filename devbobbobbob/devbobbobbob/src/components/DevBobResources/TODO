@@ -14,4 +14,5 @@
                 [ ] research how to get the taxonomy names 
 
 
-    [ ] Add resources component to the main navigation
+    [x ] Add resources component to the main navigation
+    [ ] Add Tests

@@ -9,6 +9,8 @@
         
     # Styling:
         [x] install Material ui
+        [x] install Material ui icons
+        [ ] install styled components
         [ ] Add spacing around window of browser
         [ ] background color should fill entire window area
 

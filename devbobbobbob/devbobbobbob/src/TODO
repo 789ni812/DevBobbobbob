@@ -5,15 +5,15 @@
     [ ] Add homepage content
 
     # Taxonomies:
-
+        [ ] Research into creating views for taxonomies.
         
     # Styling:
         [x] install Material ui
         [x] install Material ui icons
         [x] install styled components
-
         [x] Add spacing around window of browser
         [x] background color should fill entire window area
+        [ ] increase page height when text is short (example: http://localhost:3000/resources)
 
     # Tests:
         [ ] Review components and what test need writing

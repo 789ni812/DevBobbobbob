@@ -10,9 +10,10 @@
     # Styling:
         [x] install Material ui
         [x] install Material ui icons
-        [ ] install styled components
-        [ ] Add spacing around window of browser
-        [ ] background color should fill entire window area
+        [x] install styled components
+
+        [x] Add spacing around window of browser
+        [x] background color should fill entire window area
 
     # Tests:
         [ ] Review components and what test need writing

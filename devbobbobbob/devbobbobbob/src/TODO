@@ -6,6 +6,8 @@
 
     # Taxonomies:
         [ ] Research into creating views for taxonomies.
+            Ref: https://www.drupal.org/docs/core-modules-and-themes/core-modules/jsonapi-module/filtering
+            Ref: https://www.drupal.org/docs/core-modules-and-themes/core-modules/jsonapi-module/fetching-resources-get
         
     # Styling:
         [x] install Material ui

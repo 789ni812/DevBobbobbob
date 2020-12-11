@@ -1,24 +1,4 @@
 # MarkDown Renderer:
+scanning the local filesystem is not practical and either not possible or difficult to do with Create React App (research this more though eh if you need a solution)
 
-    [] Read all my markdown files
-         under the (00Project-Reference-Library\00MyVsNotes)
-         [ ] @research how to scan a directory and list the file contents (we only require markdown files if that helps.)
-
-            ```
-                const fs = require('fs')
-
-                const dir = '/Users/flavio/folder'
-                const files = fs.readdirSync(dir)
-
-                for (const file of files) {
-                console.log(file)
-                }
-            ```
-
-        [ ] Check out the project reference folder
-         into a subfolder inside the src folder 
-        (create-react-app stops files from being imported outside of the src folder) 
-        [ ] Research How to list files
-         in the 00project-reference.... directory 
-        [ ] implement listing of files 
-        in the 00project-reference....  directory
+Decided reading markdown files from the local filesystem is redundant now we have Drupal as a backend 

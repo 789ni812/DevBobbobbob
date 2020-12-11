@@ -37,13 +37,28 @@ const Articles = () => {
       {currentArticle ? (
         <div>
           Current resource selected
-          <h2>Title: {currentArticle.attributes.title}</h2>
+          <h2>{currentArticle.attributes.title}</h2>
           <div
             dangerouslySetInnerHTML={{
               __html: currentArticle.attributes.body.value,
             }}
           ></div>
-          {console.log("CurrentResource: ", currentArticle)}
+          <div>
+            {/* 
+            //FIXME CORB issue when trying to render an image 
+            See https://drupal.stackexchange.com/questions/282092/jsonapi-cross-origin-read-blocking-corb-blocked-cross-origin-response-in-vue
+            and https://drupal.stackexchange.com/questions/245903/how-do-i-set-up-cors
+            
+            */}
+            {/* <img
+              src={currentArticle.relationships.field_image.links.related.href}
+              alt={currentArticle.relationships.field_image.data.meta.alt}
+            /> */}
+          </div>
+          {console.log(
+            "CurrentResource: ",
+            currentArticle.relationships.field_image.links
+          )}
         </div>
       ) : (
         <div>Click an article resource for more info...</div>

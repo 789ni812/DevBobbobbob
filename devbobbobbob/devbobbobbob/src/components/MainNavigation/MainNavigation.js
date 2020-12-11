@@ -2,7 +2,6 @@ import React from "react";
 import { Switch, Route, Link } from "react-router-dom";
 
 import Articles from "../Articles/Articles";
-import MarkdownRenderer from "../MarkdownRenderer/MarkdownRenderer";
 import DevBobResourcesList from "../DevBobResources/DevBobResourcesList";
 
 function Home() {
@@ -24,11 +23,6 @@ function MainNavigation() {
           </Link>
         </li>
         <li>
-          <Link to="/markdown" data-test="link-markdown">
-            Markdown
-          </Link>
-        </li>
-        <li>
           <Link to="/resources" data-test="link-resources">
             DevBobResourcesList
           </Link>
@@ -40,9 +34,6 @@ function MainNavigation() {
         </Route>
         <Route path="/articles">
           <Articles />
-        </Route>
-        <Route path="/markdown">
-          <MarkdownRenderer />
         </Route>
         <Route path="/resources">
           <DevBobResourcesList />

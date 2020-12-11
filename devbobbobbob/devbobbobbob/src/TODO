@@ -2,17 +2,22 @@
 
 
 ## Next:
-[ ] Add homepage content
+    [ ] Add homepage content
 
-# Styling:
-    [ ] Add spacing around window of browser
-    [ ] background color should fill entire window area
+    # Taxonomies:
 
-# Tests:
-    [ ] Revoew components and what test need writing
-    [ ] Write some beviour tests
+        
+    # Styling:
+        [x] install Material ui
+        [ ] Add spacing around window of browser
+        [ ] background color should fill entire window area
 
-     ## Install Moxios for development:
+    # Tests:
+        [ ] Review components and what test need writing
+        [ ] Write some beviour tests
+
+## Someday / Maybe:
+    ## Install Moxios for development:
         [ ] review Udemy course on advanced REact (covers Moxios)
         [ ] plan work out
 

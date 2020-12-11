@@ -17,10 +17,11 @@
 
 
     [x ] Add resources component to the main navigation
-    
+    [ ] add Thumbnail view of resource 
+            see: https://www.npmjs.com/package/react-thumbnail
 
     ## Styling: 
         [ ] Add icon for URL to show opens in external window
 
     # Sometime / Maybe:
-        [ ] Add favourite functionality 
+        [ ] Create "Add to favourites" functionality 

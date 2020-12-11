@@ -1,11 +1,11 @@
 #DevBobResrouces:
-    [ ] Rename DevBobResources to Resources
+    [ ] @easy Rename DevBobResources to Resources
     [ ] Add Tests    
     [x] get basic response from drupal site
     
     # List resources
-    [ x] get list of all resources
-    [x ] resource list will link to each resource detail view
+    [x] get list of all resources
+    [x] resource list will link to each resource detail view
     
         Display:    
             [x] title
@@ -13,7 +13,7 @@
             [x] URL as hyperlink
             [x] hyperlink opens in new window
             [ ] Topics taxonomy from Drupal
-                [ ] research how to get the taxonomy names 
+                [ ] @research how to get the taxonomy names 
 
 
     [x ] Add resources component to the main navigation

@@ -1,7 +1,24 @@
-MarkDown Renderer:
+# MarkDown Renderer:
 
-    [] Read all my markdown files under the (00Project-Reference-Library\00MyVsNotes)
-        [ ] Check out the project reference folder into a subfolder inside the src folder 
-    (create-react-app stops files from being imported outside of the src folder) 
-        [ ] Research How to list files in the 00project-reference.... directory 
-        [ ] implement list files in the 00project-reference....  directory
+    [] Read all my markdown files
+         under the (00Project-Reference-Library\00MyVsNotes)
+         [ ] @research how to scan a directory and list the file contents (we only require markdown files if that helps.)
+
+            ```
+                const fs = require('fs')
+
+                const dir = '/Users/flavio/folder'
+                const files = fs.readdirSync(dir)
+
+                for (const file of files) {
+                console.log(file)
+                }
+            ```
+
+        [ ] Check out the project reference folder
+         into a subfolder inside the src folder 
+        (create-react-app stops files from being imported outside of the src folder) 
+        [ ] Research How to list files
+         in the 00project-reference.... directory 
+        [ ] implement listing of files 
+        in the 00project-reference....  directory

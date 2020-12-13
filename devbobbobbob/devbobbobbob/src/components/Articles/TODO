@@ -9,7 +9,7 @@
     [ ] Author
     [ ] add external resource field to article content type in drupal
     [ ] add image //FIXME corbs bug
-    [ ] @FIXME check if article body exists before rendering
+    [x] @FIXME check if article body exists before rendering
     
     # external artcile 
     [x] add external field in drupal 

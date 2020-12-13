@@ -22,9 +22,11 @@ const Articles = () => {
   /**
    * Create a Div tag and then renders the HTML included in the string
    * ref: https://reactjs.org/docs/dom-elements.html
+   * //TODO Move this helper function to a utility file and include it.
    * @param {string } htmlToRender
+   * @returns {string} rendered HTML wrapped in <div></div>
    */
-  const dangourslyRenderHTMLHelper = (htmlToRender) => {
+  const dangourslySetInnerHTMLHelper = (htmlToRender) => {
     return (
       <div
         dangerouslySetInnerHTML={{
@@ -54,7 +56,7 @@ const Articles = () => {
           Current resource selected
           <h2>{currentArticle.attributes.title}</h2>
           {currentArticle.attributes.body ? (
-            dangourslyRenderHTMLHelper(currentArticle.attributes.body.value)
+            dangourslySetInnerHTMLHelper(currentArticle.attributes.body.value)
           ) : (
             <div>negative</div>
           )}

@@ -1,0 +1,4 @@
+# Logger resource type :
+    [ ] Create localstorage to store logger content @low 
+    [ ] create content type in drupal @high 
+    [ ] User can create logger content in Markdown format @low 

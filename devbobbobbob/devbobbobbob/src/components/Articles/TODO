@@ -4,10 +4,11 @@
 
 # Articles:
     
-    [ ] Update Tests
+ 
     [ ] Add Date created and date revised
     [ ] Author
-    [ ] add external resource field to article content type in drupal
+    [x] add external resource field to article content type in drupal
+    [ ] Add external resource field to articles render
     [ ] add image //FIXME corbs bug
     [x] @FIXME check if article body exists before rendering
     
@@ -19,3 +20,5 @@
     #style:
         [ ] Create Article list with images 
         
+    # Testing:
+        [ ] Update Tests

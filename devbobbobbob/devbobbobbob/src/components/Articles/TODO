@@ -11,8 +11,9 @@
     @log added in drupal: "external_resource	field_external_resource	Boolean"
     [ ] add if external article do .... else (based on layout or unique action)
 
-    #style:
+    ## style:
         [ ] Create Article list with images 
+        [ ] Create full article display
         
     # Testing:
         [ ] Update Tests

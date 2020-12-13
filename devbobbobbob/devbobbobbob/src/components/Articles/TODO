@@ -1,9 +1,20 @@
+#@today 
+        [ ] Articles are good enough to put live for MVP
+
+
 # Articles:
-    [ ] add external (recommended article) 
+    
     [ ] Update Tests
     [ ] Add Date created and date revised
     [ ] Author
-    [ ] add image
+    [ ] add external resource field to article content type in drupal
+    [ ] add image //FIXME corbs bug
+    [ ] @FIXME check if article body exists before rendering
+    
+    # external artcile 
+    [x] add external field in drupal 
+    @log added in drupal: "external_resource	field_external_resource	Boolean"
+    [ ] add if external article do .... else (based on layout or unique action)
 
     #style:
         [ ] Create Article list with images 

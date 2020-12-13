@@ -30,3 +30,11 @@
                     
                 Ref: https://www.drupal.org/docs/core-modules-and-themes/core-modules/jsonapi-module/fetching-resources-get
 
+    # Host live version of Drupal: @critical
+        See Logger: http://localhost:8080/drupal/node/22
+
+    # Create Todo / action type: 
+
+    # Update backup solution:
+        [ ] make clone of VM before conitueing @critical 
+        [ ] Find original backup solution

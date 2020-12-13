@@ -1,15 +1,10 @@
-#Devbobbobbob general: 
+# Devbobbobbob Default TODO File: 
 
-
-## Next:
     [ ] Add homepage content
 
-    # Taxonomies:
-        [ ] Research into creating views for taxonomies.
-            Ref: https://www.drupal.org/docs/core-modules-and-themes/core-modules/jsonapi-module/filtering
-            Ref: https://www.drupal.org/docs/core-modules-and-themes/core-modules/jsonapi-module/fetching-resources-get
+
         
-    # Styling:
+    ## Styling:
         [x] install Material ui
         [x] install Material ui icons
         [x] install styled components
@@ -17,15 +12,21 @@
         [x] background color should fill entire window area
         [ ] increase page height when text is short (example: http://localhost:3000/resources)
 
-    # Tests:
+    ## Tests:
         [ ] Review components and what test need writing
         [ ] Write some beviour tests
 
-## Someday / Maybe:
-    ## Install Moxios for development:
-        [ ] review Udemy course on advanced REact (covers Moxios)
-        [ ] plan work out
+    ## Someday / Maybe:
+        ### Install Moxios for development:
+            [ ] review Udemy course on advanced REact (covers Moxios)
+            [ ] plan work out
 
-        [ ] cheatsheet content type? can use the resource one and add a taxonomy type.
+            [ ] cheatsheet content type? can use the resource one and add a taxonomy type.
 
+        ### Taxonomies:
+            [ ] Research into creating views for taxonomies.
+                
+                Ref: https://www.drupal.org/docs/core-modules-and-themes/core-modules/jsonapi-module/filtering
+                    
+                Ref: https://www.drupal.org/docs/core-modules-and-themes/core-modules/jsonapi-module/fetching-resources-get
 

@@ -1,4 +1,17 @@
 # Logger resource type :
     [ ] Create localstorage to store logger content @low 
-    [ ] create content type in drupal @high 
+    [ ] create content type in drupal @high
+    [ ] List Logger content by date @high
     [ ] User can create logger content in Markdown format @low 
+
+
+    [ ] Organise Logger content dy date descending
+        # Notes List: 
+            [ ] Render Notes as a list
+            [ ] Contactinate long notes 
+            [ ] Show date published on list
+            [ ] show project on list
+            [ ] Clicking on note item from the list will render the full note details
+            [ ] If notes exists then render it
+            [ ] If client notes exists then render it
+            [ ] If Deveoper notes exists then render it

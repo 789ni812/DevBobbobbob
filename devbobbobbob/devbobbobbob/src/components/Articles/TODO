@@ -1,10 +1,9 @@
-#@today 
+# @today 
         [ ] Articles are good enough to put live for MVP
 
 
 # Articles:
     
- 
     [ ] Add Date created and date revised
     [ ] Author
     [x] add external resource field to article content type in drupal

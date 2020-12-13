@@ -19,6 +19,21 @@ const Articles = () => {
     setCurrentArticle(article);
   };
 
+  /**
+   * Create a Div tag and then renders the HTML included in the string
+   * ref: https://reactjs.org/docs/dom-elements.html
+   * @param {string } htmlToRender
+   */
+  const dangourslyRenderHTMLHelper = (htmlToRender) => {
+    return (
+      <div
+        dangerouslySetInnerHTML={{
+          __html: htmlToRender,
+        }}
+      ></div>
+    );
+  };
+
   return (
     <div>
       Articles
@@ -38,11 +53,11 @@ const Articles = () => {
         <div>
           Current resource selected
           <h2>{currentArticle.attributes.title}</h2>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: currentArticle.attributes.body.value,
-            }}
-          ></div>
+          {currentArticle.attributes.body ? (
+            dangourslyRenderHTMLHelper(currentArticle.attributes.body.value)
+          ) : (
+            <div>negative</div>
+          )}
           <div>
             {/* 
             //FIXME CORB issue when trying to render an image 

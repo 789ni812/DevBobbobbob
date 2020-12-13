@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import DevBobResourcesService from "../../services/DevBobResourcesService";
 
-const DevBobResourcesList = () => {
+const Resources = () => {
   const [devBobResources, setDevBobResources] = useState([]);
   const [currentResource, setCurrentResource] = useState(null);
 
@@ -56,4 +56,4 @@ const DevBobResourcesList = () => {
   );
 };
 
-export default DevBobResourcesList;
+export default Resources;

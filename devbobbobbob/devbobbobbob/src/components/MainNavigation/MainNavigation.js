@@ -2,7 +2,7 @@ import React from "react";
 import { Switch, Route, Link } from "react-router-dom";
 
 import Articles from "../Articles/Articles";
-import DevBobResourcesList from "../DevBobResources/DevBobResourcesList";
+import Resources from "../Resources/ResourcesList";
 
 function Home() {
   return <p>Im home</p>;
@@ -24,7 +24,7 @@ function MainNavigation() {
         </li>
         <li>
           <Link to="/resources" data-test="link-resources">
-            DevBobResourcesList
+            Resources
           </Link>
         </li>
       </ul>
@@ -36,7 +36,7 @@ function MainNavigation() {
           <Articles />
         </Route>
         <Route path="/resources">
-          <DevBobResourcesList />
+          <Resources />
         </Route>
       </Switch>
     </div>

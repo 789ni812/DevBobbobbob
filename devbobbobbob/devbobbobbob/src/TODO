@@ -1,4 +1,4 @@
-# Devbobbobbob Default TODO File: 
+# Devbobbobbob Default React changes: 
 
     [ ] Add homepage content
 
@@ -22,19 +22,29 @@
             [ ] plan work out
 
             [ ] cheatsheet content type? can use the resource one and add a taxonomy type.
+# Devbobbobbob Default Drupal site changes:
 
-        ### Taxonomies:
+    ## Taxonomy:
+        [ ] Display a list of taxonomies
             [ ] Research into creating views for taxonomies.
-                
-                Ref: https://www.drupal.org/docs/core-modules-and-themes/core-modules/jsonapi-module/filtering
                     
-                Ref: https://www.drupal.org/docs/core-modules-and-themes/core-modules/jsonapi-module/fetching-resources-get
+            Ref: https://www.drupal.org/docs/core-modules-and-themes/core-modules/jsonapi-module/filtering
+                
+            Ref: https://www.drupal.org/docs/core-modules-and-themes/core-modules/jsonapi-module/fetching-resources-get
 
-    # Host live version of Drupal: @critical
+    ## Host live version of Drupal: @critical
         See Logger: http://localhost:8080/drupal/node/22
 
-    # Create Todo / action type: 
+    
+    ## Create Todo content type:
+    
+    ## Create quiz content type:
 
-    # Update backup solution:
-        [ ] make clone of VM before conitueing @critical 
-        [ ] Find original backup solution
+    ## Create idea content type:
+
+
+
+    ## Update backup solution:
+        [x] make clone of VM before conitueing @critical 
+        [ ] Find original mvp backup solution
+

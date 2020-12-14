@@ -1,6 +1,16 @@
 import React, { useEffect, useState } from "react";
 import ArticlesService from "../../services/ArticlesService";
 
+//material-ui
+// Grids and cards layout
+import { Grid, Paper, Typography } from "@material-ui/core";
+import Card from "@material-ui/core/Card";
+import CardActionArea from "@material-ui/core/CardActionArea";
+import CardActions from "@material-ui/core/CardActions";
+import CardContent from "@material-ui/core/CardContent";
+import CardMedia from "@material-ui/core/CardMedia";
+import Button from "@material-ui/core/Button";
+
 const Articles = () => {
   const [articles, setArticles] = useState([]);
   const [currentArticle, setCurrentArticle] = useState(null);
@@ -38,7 +48,47 @@ const Articles = () => {
 
   return (
     <div>
-      Articles
+      <div style={{ marginTop: 20, padding: 30 }}>
+        <Grid container spacing={4} justify="center">
+          {articles.map((resource) => (
+            <Grid item key={resource.id}>
+              <Card>
+                <CardActionArea onClick={() => setActiveArticle(resource)}>
+                  {/* 
+                  //FIXME CORS problem loading image
+                  <CardMedia
+                    component="img"
+                    alt="Contemplative Reptile"
+                    height="140"
+                    image={
+                      resource.relationships.field_image.links.related.href
+                    }
+                    title="Contemplative Reptile"
+                  /> */}
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      {resource.attributes.title}
+                    </Typography>
+                    <Typography component="p">
+                      {resource.attributes.title}
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button
+                    size="small"
+                    color="primary"
+                    onClick={() => setActiveArticle(resource)}
+                  >
+                    Read
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </div>
+      ##### Articles
       <ul>
         {articles &&
           articles.map((resource) => (

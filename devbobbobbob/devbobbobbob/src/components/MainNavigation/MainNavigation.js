@@ -3,7 +3,6 @@ import { Switch, Route, Link } from "react-router-dom";
 
 // Material ui
 
-import TypoGraphy from "@material-ui/core/Typography";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
@@ -13,6 +12,7 @@ import Articles from "../Articles/Articles";
 import Resources from "../Resources/ResourcesList";
 
 function Home() {
+  // TODO Create Home component and import it here
   return <p>Im home</p>;
 }
 

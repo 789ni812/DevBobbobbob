@@ -1,6 +1,14 @@
 import React from "react";
 import { Switch, Route, Link } from "react-router-dom";
 
+// Material ui
+
+import TypoGraphy from "@material-ui/core/Typography";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemText from "@material-ui/core/ListItemText";
+
+// Components
 import Articles from "../Articles/Articles";
 import Resources from "../Resources/ResourcesList";
 
@@ -8,26 +16,31 @@ function Home() {
   return <p>Im home</p>;
 }
 
-function MainNavigation() {
+function MainNavigation(props) {
   return (
     <div>
-      <ul>
-        <li>
-          <Link to="/" data-test="link-homepage">
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link to="/articles" data-test="link-articles">
-            Articles
-          </Link>
-        </li>
-        <li>
-          <Link to="/resources" data-test="link-resources">
-            Resources
-          </Link>
-        </li>
-      </ul>
+      <List component="nav">
+        <ListItem component="div">
+          <ListItemText inset>
+            <Link to="/" data-test="link-homepage">
+              Home
+            </Link>
+          </ListItemText>
+
+          <ListItemText inset>
+            <Link to="/articles" data-test="link-articles">
+              Articles
+            </Link>
+          </ListItemText>
+
+          <ListItemText inset>
+            <Link to="/resources" data-test="link-resources">
+              Resources
+            </Link>
+          </ListItemText>
+        </ListItem>
+      </List>
+
       <Switch>
         <Route exact path="/">
           <Home />

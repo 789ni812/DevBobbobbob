@@ -66,9 +66,8 @@ const Articles = () => {
             color="primary"
             onClick={() => setCurrentArticle(null)}
           >
-            Back to Article List
+            ...Back to Article List
           </Button>
-          Current resource selected
           <h2>{currentArticle.attributes.title}</h2>
           <p>Created on: {dateLongHelper(currentArticle.attributes.created)}</p>
           <p>

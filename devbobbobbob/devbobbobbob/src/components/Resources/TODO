@@ -1,5 +1,8 @@
-#DevBobResrouces:
-    [x] @easy Rename DevBobResources to Resources
+#Resources:
+    [ ] Create back to resource list
+    [ ] toggle between resource details and list depending on user selection
+    [ ] clear currentResource state on clicking back to resource button
+     [x] @easy Rename DevBobResources to Resources
     [ ] Add Tests    
     [x] get basic response from drupal site
     

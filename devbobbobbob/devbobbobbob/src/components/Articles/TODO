@@ -4,8 +4,7 @@
     [ ] Add external resource field to articles render
     [ ] add image //FIXME corbs bug
     [x] @FIXME check if article body exists before rendering
-    [x] render Article details above or in place of the list of Articles
-    [ ] Add "Article" as the page title? 
+    [x] render Article details above or in place of the list of Articles 
     # external artcile 
     [x] add external field in drupal 
     @log added in drupal: "external_resource	field_external_resource	Boolean"

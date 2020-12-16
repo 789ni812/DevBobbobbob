@@ -46,7 +46,7 @@ const Articles = () => {
       ></div>
     );
   };
-  console.log("current Article:", currentArticle);
+  // console.log("current Article:", currentArticle);
 
   /**
    * dateLongHelper reformats the datetime format into a user readable long date format e.g. 1st december 2020 18:13
@@ -59,64 +59,23 @@ const Articles = () => {
 
   return (
     <div>
-      <div style={{ marginTop: 20, padding: 30 }}>
-        <Grid container spacing={4} justify="center">
-          {articles.map((resource) => (
-            <Grid item key={resource.id}>
-              <Card>
-                <CardActionArea onClick={() => setActiveArticle(resource)}>
-                  {/* 
-                  //FIXME CORS problem loading image
-                  <CardMedia
-                    component="img"
-                    alt="Contemplative Reptile"
-                    height="140"
-                    image={
-                      resource.relationships.field_image.links.related.href
-                    }
-                    title="Contemplative Reptile"
-                  /> */}
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      {resource.attributes.title}
-                    </Typography>
-                    <Typography component="p">
-                      {resource.attributes.title}
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-                <CardActions>
-                  <Button
-                    size="small"
-                    color="primary"
-                    onClick={() => setActiveArticle(resource)}
-                  >
-                    Read
-                  </Button>
-                </CardActions>
-              </Card>
-            </Grid>
-          ))}
-        </Grid>
-      </div>
-      ##### Articles
-      <ul>
-        {articles &&
-          articles.map((resource) => (
-            <li
-              className="hyperlink"
-              key={resource.id}
-              onClick={() => setActiveArticle(resource)}
-            >
-              {resource.attributes.title}
-            </li>
-          ))}
-      </ul>
       {currentArticle ? (
         <div>
+          <Button
+            size="small"
+            color="primary"
+            onClick={() => setCurrentArticle(null)}
+          >
+            Back to Article List
+          </Button>
           Current resource selected
           <h2>{currentArticle.attributes.title}</h2>
           <p>Created on: {dateLongHelper(currentArticle.attributes.created)}</p>
+          <p>
+            External resource:
+            {/*  //TODO external resource
+            {currentArticle.attributes.field_external_resource} */}
+          </p>
           {currentArticle.attributes.body ? (
             dangourslySetInnerHTMLHelper(currentArticle.attributes.body.value)
           ) : (
@@ -134,13 +93,48 @@ const Articles = () => {
               alt={currentArticle.relationships.field_image.data.meta.alt}
             /> */}
           </div>
-          {console.log(
-            "CurrentResource: ",
-            currentArticle.relationships.field_image.links
-          )}
         </div>
       ) : (
-        <div>Click an article resource for more info...</div>
+        <div style={{ marginTop: 20, padding: 30 }}>
+          <Grid container spacing={4} justify="center">
+            {articles.map((resource) => (
+              <Grid item key={resource.id}>
+                <Card>
+                  <CardActionArea onClick={() => setActiveArticle(resource)}>
+                    {/* 
+                  //FIXME CORS problem loading image
+                  <CardMedia
+                    component="img"
+                    alt="Contemplative Reptile"
+                    height="140"
+                    image={
+                      resource.relationships.field_image.links.related.href
+                    }
+                    title="Contemplative Reptile"
+                  /> */}
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="h2">
+                        {resource.attributes.title}
+                      </Typography>
+                      <Typography component="p">
+                        {resource.attributes.title}
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                  <CardActions>
+                    <Button
+                      size="small"
+                      color="primary"
+                      onClick={() => setActiveArticle(resource)}
+                    >
+                      Read
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
+        </div>
       )}
     </div>
   );

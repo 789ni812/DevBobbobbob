@@ -1,5 +1,5 @@
 #DevBobResrouces:
-    [ ] @easy Rename DevBobResources to Resources
+    [x] @easy Rename DevBobResources to Resources
     [ ] Add Tests    
     [x] get basic response from drupal site
     

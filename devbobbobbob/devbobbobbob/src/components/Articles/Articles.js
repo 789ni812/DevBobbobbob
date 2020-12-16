@@ -3,7 +3,7 @@ import ArticlesService from "../../services/ArticlesService";
 
 //material-ui
 // Grids and cards layout
-import { Grid, Paper, Typography } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";

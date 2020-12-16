@@ -9,9 +9,9 @@ import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
-// import CardMedia from "@material-ui/core/CardMedia";
+import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
-
+import imageForTesting from "../../assets/images/The-Mightly-Spud-Logo-WEB.jpg";
 const Articles = () => {
   const [articles, setArticles] = useState([]);
   const [currentArticle, setCurrentArticle] = useState(null);
@@ -46,7 +46,6 @@ const Articles = () => {
       ></div>
     );
   };
-  // console.log("current Article:", currentArticle);
 
   /**
    * dateLongHelper reformats the datetime format into a user readable long date format e.g. 1st december 2020 18:13
@@ -70,28 +69,19 @@ const Articles = () => {
           </Button>
           <h2>{currentArticle.attributes.title}</h2>
           <p>Created on: {dateLongHelper(currentArticle.attributes.created)}</p>
-          <p>
-            External resource:
-            {/*  //TODO external resource
-            {currentArticle.attributes.field_external_resource} */}
-          </p>
+          <CardMedia
+            component="img"
+            alt="Contemplative Reptile"
+            height="140"
+            image={imageForTesting}
+            title="Contemplative Reptile"
+          />
+
           {currentArticle.attributes.body ? (
             dangourslySetInnerHTMLHelper(currentArticle.attributes.body.value)
           ) : (
-            <div>negative</div>
+            <div></div>
           )}
-          <div>
-            {/* 
-            //FIXME CORB issue when trying to render an image 
-            See https://drupal.stackexchange.com/questions/282092/jsonapi-cross-origin-read-blocking-corb-blocked-cross-origin-response-in-vue
-            and https://drupal.stackexchange.com/questions/245903/how-do-i-set-up-cors
-            
-            */}
-            {/* <img
-              src={currentArticle.relationships.field_image.links.related.href}
-              alt={currentArticle.relationships.field_image.data.meta.alt}
-            /> */}
-          </div>
         </div>
       ) : (
         <div style={{ marginTop: 20, padding: 30 }}>
@@ -102,15 +92,19 @@ const Articles = () => {
                   <CardActionArea onClick={() => setActiveArticle(resource)}>
                     {/* 
                   //FIXME CORS problem loading image
-                  <CardMedia
-                    component="img"
-                    alt="Contemplative Reptile"
-                    height="140"
-                    image={
-                      resource.relationships.field_image.links.related.href
-                    }
-                    title="Contemplative Reptile"
-                  /> */}
+                      // REF: https://www.drupal.org/docs/core-modules-and-themes/core-modules/jsonapi-module/fetching-resources-get#s-basic-get-example
+                      // Above ref has example that work when bringing back image data 
+                      // Looks like will need to make a seperate call to the image using the article and the image query string info
+                      // REF Query string info: ?include=field_image&fields[file--file]=uri,url
+                      // See Postman example that works here: https://dark-meadow-490350.postman.co/workspace/drupal-9~1da9e49b-4657-43d6-87e2-36fbd854bf53/request/11142804-494f3aef-40b6-44bf-a8f0-b13918b25d4a
+                 */}
+                    <CardMedia
+                      component="img"
+                      alt="Contemplative Reptile"
+                      height="140"
+                      image={imageForTesting}
+                      title="Contemplative Reptile"
+                    />
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="h2">
                         {resource.attributes.title}

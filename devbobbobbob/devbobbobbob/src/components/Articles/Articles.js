@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ArticlesService from "../../services/ArticlesService";
 
+import Moment from "moment";
 //material-ui
 // Grids and cards layout
 import { Grid, Typography } from "@material-ui/core";
@@ -44,6 +45,16 @@ const Articles = () => {
         }}
       ></div>
     );
+  };
+  console.log("current Article:", currentArticle);
+
+  /**
+   * dateLongHelper reformats the datetime format into a user readable long date format e.g. 1st december 2020 18:13
+   * //TODO Move to a Utility file
+   * @param {string} dateToParse the dateTime string
+   */
+  const dateLongHelper = (dateToParse) => {
+    return <span>{Moment(dateToParse).format("do MMMM YYYY, kk:mm")}</span>;
   };
 
   return (
@@ -105,6 +116,7 @@ const Articles = () => {
         <div>
           Current resource selected
           <h2>{currentArticle.attributes.title}</h2>
+          <p>Created on: {dateLongHelper(currentArticle.attributes.created)}</p>
           {currentArticle.attributes.body ? (
             dangourslySetInnerHTMLHelper(currentArticle.attributes.body.value)
           ) : (

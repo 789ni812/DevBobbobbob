@@ -1,6 +1,5 @@
 # Articles:
-    [ ] Add Date created and date revised
-    [ ] Author
+    [x] Add Date created and date revised
     [x] add external resource field to article content type in drupal
     [ ] Add external resource field to articles render
     [ ] add image //FIXME corbs bug

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import DevBobResourcesService from "../../services/DevBobResourcesService";
+import resourcesService from "../../services/resourcesService";
 
 const Resources = () => {
-  const [devBobResources, setDevBobResources] = useState([]);
+  const [resources, setResources] = useState([]);
   const [currentResource, setCurrentResource] = useState(null);
 
   useEffect(() => {
@@ -10,8 +10,8 @@ const Resources = () => {
   }, []);
 
   const retrieveResources = () => {
-    DevBobResourcesService.getAll().then((response) => {
-      setDevBobResources(response.data.data);
+    resourcesService.getAll().then((response) => {
+      setResources(response.data.data);
     });
   };
 
@@ -21,10 +21,10 @@ const Resources = () => {
 
   return (
     <div>
-      DevBobResourcesList.js loaded
+      resourcesList.js loaded
       <ul>
-        {devBobResources &&
-          devBobResources.map((resource) => (
+        {resources &&
+          resources.map((resource) => (
             <li
               className="hyperlink"
               key={resource.id}

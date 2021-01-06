@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import MainNavigation from "./components/MainNavigation/MainNavigation";
+import ArticlesFromDevBob from "./components/ArticlesFromDevBob/ArticlesFromDevBob";
 import "./App.css";
 
 // material-ui
@@ -16,12 +17,13 @@ function App() {
         <AppBar color="primary" position="static">
           <Toolbar>
             <TypoGraphy variant="h6" component="h1" color="inherit">
-              DevBobBobBob
+              <span data-test="site-title"> DevBobBobBob</span>
             </TypoGraphy>
           </Toolbar>
         </AppBar>
         <Container>
           <MainNavigation data-test="component-mainNavigation" />
+          <ArticlesFromDevBob data-test="component-ArticlesFromDevBob" />
         </Container>
       </div>
     </BrowserRouter>
